@@ -1,9 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
-$pkgName = "Doom Sigil"
-$installLocation = "$ENV:LocalAppData\Programs\$pkgName"
-$lnkDesktop = "$ENV:UserProfile\Desktop\$pkgName.lnk"
-$lnkDesktopBD = "$ENV:UserProfile\Desktop\$pkgName BD.lnk"
-$startMenuLocation = "$ENV:AppData\Microsoft\Windows\Start Menu\Programs\$pkgName"
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+. "$toolsDir\commonEnv.ps1"
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -29,7 +26,6 @@ if ($key.Count -eq 1) {
   Write-Warning "Please alert package maintainer the following keys were matched:"
   $key | % {Write-Warning "- $($_.DisplayName)"}
 }
-Remove-Item "$lnkDesktopBD" -force
 Remove-Item "$lnkDesktop" -force
-Remove-Item "$startMenuLocation" -recurse -force
-Remove-Item "$installLocation/*" -exclude "saves" -recurse -force
+Remove-Item "$startMenuDir" -recurse -force
+Remove-Item "$installLocation\*" -exclude *.ini, *.zds -recurse -force
