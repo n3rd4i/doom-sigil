@@ -1,18 +1,18 @@
-$zandronumLocation = "$ENV:LocalAppData\Programs\Zandronum"
-# $freedoomLocation = "$ENV:LocalAppData\Programs\FreeDoom"
-$brutalDoomLocation = "$ENV:LocalAppData\Programs\BrutalDoom"
+# Zandronum
+$zandronumLocation = [IO.Path]::Combine($ENV:LocalAppData, 'Programs', 'Zandronum')
+$zandronum = "$(Join-Path $zandronumLocation 'zandronum.exe')"
 
-$freeDoomTools = "$ENV:ChocolateyInstall\lib\freedoom\tools"
-$brutalDoomTools = "$ENV:ChocolateyInstall\lib\brutaldoom\tools"
+# FreeDoom
+$freeDoomTools = [IO.Path]::Combine($ENV:ChocolateyInstall, 'lib', 'freedoom', 'tools')
+$iWAD1 = "freedoom1.wad"
+$iWAD2 = "freedoom2.wad"
 
-$zandronum = "$zandronumLocation\zandronum.exe"
+# BrutalDoom
+$brutalDoomLocation = [IO.Path]::Combine($ENV:LocalAppData, 'Programs', 'BrutalDoom')
+$brutalDoomTools = [IO.Path]::Combine($ENV:ChocolateyInstall, 'lib', 'brutaldoom', 'tools')
+$BDicon = [IO.Path]::Combine($brutalDoomTools, 'assets', 'brutal_doom.ico')
+$BDpk3 = "$(Join-Path $brutalDoomLocation 'brutalv21.pk3')"
 
-$iWAD1 = "freedoom1.wad" # located in $ENV:DOOMWADDIR
-# $iWAD2 = "freedoom2.wad"
-
-$BDModName = 'brutalv21'
-$BDModPack = "$BDModName.pk3"
-$BDpk3 = "$brutalDoomLocation\$BDModPack"
-
-$FDicon = "$freeDoomTools\assets\playa2a8.ico"
-$BDicon = "$brutalDoomTools\assets\brutal_doom.ico"
+# Sigil
+$sigilLocation = [IO.Path]::Combine($ENV:ChocolateyInstall, 'lib', 'doom1-maps-sigil', 'tools', 'wad')
+$WAD = "$(Join-Path $sigilLocation SIGIL_v1_21.wad)"

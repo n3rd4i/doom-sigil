@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>doom-sigil</id>
-    <version>1.1.0</version>
+    <version>1.21.0</version>
     <owners>n3rd4i</owners>
     <title>doom-sigil (Install)</title>
     <iconUrl>https://cdn.statically.io/img/static1.squarespace.com/static/55e0e96be4b04ea8f08299d0/t/5c0e3979758d469c148d8fe8/1557600470344/?format=500w</iconUrl>
@@ -11,10 +11,13 @@
     <tags>doom-sigil doom sigil brutaldoom</tags>
     <summary>SIGIL MegaWAD includes 5th Episodic pack of 9 levels</summary>
     <description>
+
 The SIGIL Megawad is a mod for the original DOOM® and is distributed as such. DOOM® is a registered trademark of ZeniMax Media Inc. in the US and/or other countries. Id Software® is a registered trademark of ZeniMax Media Inc. in the US and/or other countries. The SIGIL Megawad is in no way affiliated with ZeniMax Media Inc. or id Software LLC and is not approved by ZeniMax Media Inc. or id Software.
+
     </description>
     <dependencies>
       <dependency id="brutaldoom" version="21.0.0" />
+      <dependency id="doom1-maps-sigil" version="1.21.0" />
     </dependencies>
     </metadata>
     <files>
