@@ -3,8 +3,9 @@
   <metadata>
     <id>doom-sigil</id>
     <version>1.21.0</version>
+    <packageSourceUrl>https://github.com/n3rd4i/doom-sigil</packageSourceUrl>
     <owners>n3rd4i</owners>
-    <title>doom-sigil (Install)</title>
+    <title>BrutalDoom - Sigil</title>
     <iconUrl>https://cdn.statically.io/img/static1.squarespace.com/static/55e0e96be4b04ea8f08299d0/t/5c0e3979758d469c148d8fe8/1557600470344/?format=500w</iconUrl>
     <authors>John Romero</authors>
     <projectUrl>https://www.romerogames.ie/si6il</projectUrl>
@@ -12,7 +13,19 @@
     <summary>SIGIL MegaWAD includes 5th Episodic pack of 9 levels</summary>
     <description>
 
-The SIGIL Megawad is a mod for the original DOOM® and is distributed as such. DOOM® is a registered trademark of ZeniMax Media Inc. in the US and/or other countries. Id Software® is a registered trademark of ZeniMax Media Inc. in the US and/or other countries. The SIGIL Megawad is in no way affiliated with ZeniMax Media Inc. or id Software LLC and is not approved by ZeniMax Media Inc. or id Software.
+![logo](https://cdn.statically.io/img/media.moddb.com/images/mods/1/20/19741/DoomGuyStandingHD.jpg)
+## This package
+This package creates the necessary shortcuts for playing `BrutalDoom` with `SIGIL` megawad.
+
+![logo](https://cdn.statically.io/img/doomwiki.org/w/images/3/32/SIGIL_title.png)
+## Megawad info
+The `SIGIL` Megawad is a mod for the original DOOM® and is distributed as such.
+
+DOOM® is a registered trademark of ZeniMax Media Inc. in the US and/or other countries.
+
+Id Software® is a registered trademark of ZeniMax Media Inc. in the US and/or other countries.
+
+The `SIGIL` Megawad is in no way affiliated with ZeniMax Media Inc. or id Software LLC and is not approved by ZeniMax Media Inc. or id Software.
 
     </description>
     <dependencies>
